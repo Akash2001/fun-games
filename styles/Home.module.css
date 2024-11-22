@@ -1,0 +1,154 @@
+/*********************************************Home*****************************************************************/
+.game_head {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.games {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px 5%;
+  box-shadow: 0px 0px 5px -1px #000000;
+  text-align: center;
+}
+
+.games:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 7px -1px #000000;
+}
+
+/*********************************************Tic tac toe*****************************************************************/
+.board {
+  width: 30%;
+  margin: 80px auto;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.row1,
+.row2,
+.row3 {
+  display: flex;
+}
+
+.row1 div,
+.row2 div,
+.row3 div {
+  width: 33.33%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  overflow-wrap: normal;
+}
+
+.rightBorder {
+  border-right: 1px solid #000000;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.row1 {
+  border-bottom: 1px solid #000000;
+}
+
+.row2 {
+  border-bottom: 1px solid #000000;
+}
+
+.button {
+  background-color: #e11414;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  color: #ffffff;
+  vertical-align: middle;
+  box-shadow: 0px 0px 4px 0px #000000;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 0px #000000;
+}
+
+.level {
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.level select {
+  background-color: #e11414;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  box-shadow: 0px 0px 4px 0px #000000;
+}
+
+.level option {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (min-width:576px) and (max-width:992px) {
+  .board {
+    width: 55%;
+  }
+}
+
+@media (min-width:300px) and (max-width:575px) {
+  .board {
+    width: 80%;
+  }
+}
+
+/***********************************************Stone paper scissor***************************************************************/
+.sps_moves {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.sps_moves div {
+  width: 45%;
+  padding: 5px 18% 0px;
+  text-align: center;
+}
+
+.sps_moves>p {
+  width: 10%;
+}
+
+.sps_moves p {
+  vertical-align: middle;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.sps_player {
+  display: flex;
+  width: 80%;
+  margin: 70px auto 20px;
+}
+
+.sps_player div {
+  width: 33.33%;
+  padding: 5px 12% 0px;
+}
+
+.sps_player>div:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px -1px #000000;
+}
+
+.sps_player p {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+@media (min-width:300px) and (max-width:575px) {
+  .sps_moves {
+    width: 100%;
+  }
+}
